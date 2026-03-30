@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: main # تأكدي أن هذا هو اسم الفرع في جيتهاب
+
+media_folder: "images" # المجلد الذي ستُحفظ فيه الصور
+public_folder: "/images"
+
+collections:
+  - name: "blog"
+    label: "المقالات"
+    folder: "posts" # سيقوم النظام بإنشاء ملف لكل مقال هنا
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "العنوان", name: "title", widget: "string" }
+      - { label: "التصنيف", name: "category", widget: "select", options: ["بشرة", "صحة", "جمال"] }
+      - { label: "تاريخ النشر", name: "date", widget: "datetime" }
+      - { label: "صورة المقال", name: "image", widget: "image" }
+      - { label: "وصف مختصر", name: "summary", widget: "text" }
+      - { label: "محتوى المقال", name: "body", widget: "markdown" }

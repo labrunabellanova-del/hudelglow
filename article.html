@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hudel Glow | مقال</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .single-post { max-width: 900px; margin: 50px auto; padding: 20px; background: #fff; border-radius: 15px; }
+        .post-header { text-align: center; margin-bottom: 30px; }
+        .post-header h1 { font-family: 'Dancing Script', cursive; font-size: 3rem; margin-bottom: 10px; }
+        .post-full-img { width: 100%; border-radius: 15px; margin-bottom: 30px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .post-content { line-height: 2; font-size: 1.2rem; color: #444; text-align: justify; }
+        .back-btn { display: inline-block; margin-bottom: 20px; color: #b58b66; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><span class="hudel">Hudel</span><span class="glow">Glow</span></div>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">عنا</a></li>
+                <li><a href="contact.html">اتصلي بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="single-post">
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-right"></i> العودة للرئيسية</a>
+        <div id="post-data">
+            <div class="post-header">
+                <h1 id="title-display">جاري التحميل...</h1>
+                <p id="meta-display"></p>
+            </div>
+            <img id="image-display" src="" class="post-full-img">
+            <div id="content-display" class="post-content"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        // تشغيل وظيفة عرض المقال المنفرد عند تحميل الصفحة
+        window.onload = displaySingleArticle;
+    </script>
+</body>
+</html>

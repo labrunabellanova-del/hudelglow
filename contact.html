@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Hudel Glow | اتصلي بنا</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-form { max-width: 600px; margin: 60px auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .contact-form h2 { color: #b58b66; text-align: center; margin-bottom: 30px; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; color: #666; }
+        input, textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-family: 'Cairo'; }
+        button { width: 100%; padding: 15px; background: #d4a373; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1rem; }
+        button:hover { background: #000; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><span class="hudel">Hudel</span><span class="glow">Glow</span></div>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">عنا</a></li>
+                <li><a href="contact.html" class="active">اتصلي بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact-form">
+        <h2>تواصلي مع عالم Hudel Glow</h2>
+        <form>
+            <div class="form-group"><label>الاسم</label><input type="text" placeholder="اسمك الكريم"></div>
+            <div class="form-group"><label>البريد الإلكتروني</label><input type="email" placeholder="example@mail.com"></div>
+            <div class="form-group"><label>رسالتك</label><textarea rows="5" placeholder="كيف يمكننا مساعدتك؟"></textarea></div>
+            <button type="submit">إرسال الرسالة</button>
+        </form>
+    </div>
+</body>
+</html>
