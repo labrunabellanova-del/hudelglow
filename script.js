@@ -41,6 +41,13 @@ async function displaySingleArticle() {
         `;
     }
 }
+// مثال لكود يجلب المقالات من مجلد posts
+fetch('/posts/سحر-الإشراق.md') // أو اسم الملف كما ظهر في GitHub
+  .then(response => response.text())
+  .then(data => {
+    // كود لعرض المحتوى داخل صفحة الموقع
+    document.getElementById('content').innerHTML = data;
+  });
 
 // تشغيل الوظائف بناءً على الصفحة الحالية
 window.onload = () => {
